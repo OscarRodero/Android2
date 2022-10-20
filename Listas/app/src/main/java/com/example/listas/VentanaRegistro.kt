@@ -1,6 +1,7 @@
 package com.example.listas
 
 import Model.Registro
+import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -15,10 +16,13 @@ class VentanaRegistro : AppCompatActivity() {
             val Nombre = binding.txtNombre.text.toString()
             val Contraseña = binding.txtContraseA.text.toString()
             var n = Registro(Nombre, Contraseña)
-
+            val intent = Intent()
+            intent.putExtra("reg", n)
+            setResult(Activity.RESULT_OK, intent)
             finish()
         }
         binding.btnVolver.setOnClickListener {
+            setResult(Activity.RESULT_CANCELED)
             finish()
         }
     }

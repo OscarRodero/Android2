@@ -1,0 +1,5 @@
+package Model
+
+object Almacen {
+
+}

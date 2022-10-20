@@ -14,11 +14,15 @@ class MainActivity : AppCompatActivity() {
         //setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //Botón Registrarse
         binding.btnRegistrarse.setOnClickListener {
             var inte: Intent = Intent(this,VentanaRegistro::class.java)
             startActivityForResult(inte, 0)
 
         }
+
+        //Botón Listar
         binding.btnListar.setOnClickListener {
             var inte: Intent = Intent(this,VentanaListado::class.java)
             startActivity(inte)
