@@ -1,10 +1,12 @@
 package com.example.listas
 
+import Model.Almacen
 import Model.Registro
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.result.contract.ActivityResultContracts
 import com.example.listas.databinding.ActivityVentanaRegistroBinding
 
 class VentanaRegistro : AppCompatActivity() {
@@ -12,6 +14,7 @@ class VentanaRegistro : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ventana_registro)
+
         binding.btnConfirmarRegistro.setOnClickListener {
             val Nombre = binding.txtNombre.text.toString()
             val Contraseña = binding.txtContraseA.text.toString()
