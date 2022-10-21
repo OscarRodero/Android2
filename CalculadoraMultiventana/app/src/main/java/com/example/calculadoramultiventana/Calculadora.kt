@@ -35,7 +35,7 @@ class Calculadora : AppCompatActivity() {
                 lanzarResultado(resul)
             }else{
                 var resul:String="No se puede dividir entre 0"
-                intent = Intent(this, Calculadora::class.java)
+                intent = Intent(this, Resultado::class.java)
                 intent.putExtra("resultado", resul)
                 startActivity(intent)
             }
@@ -43,7 +43,7 @@ class Calculadora : AppCompatActivity() {
     }
 
     private fun lanzarResultado(resul: Double) {
-        intent = Intent(this, Calculadora::class.java)
+        intent = Intent(this, Resultado::class.java)
         intent.putExtra("resultado", resul)
         startActivity(intent)
     }
