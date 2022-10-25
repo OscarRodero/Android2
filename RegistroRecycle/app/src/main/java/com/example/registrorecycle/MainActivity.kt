@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
 
     var resultLauncher = registerForActivityResult(ActivityRegistroBinding.StartActivityForResult()) { result ->
-        if (result.resultCode == Activity.RESULT_OK) {
+        if (result.resultCode == RESULT_OK) {
             // There are no request codes
             val data: Intent? = result.data
             // Get data from Intent
