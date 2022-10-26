@@ -10,7 +10,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/imagenPerfil"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +30,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.099"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/imagenPerfil"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.192" />
 
@@ -43,7 +43,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.086"
-            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toEndOf="@+id/imagenPerfil"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.833" />
     </androidx.constraintlayout.widget.ConstraintLayout>
