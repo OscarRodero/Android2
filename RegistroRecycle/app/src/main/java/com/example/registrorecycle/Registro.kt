@@ -13,6 +13,8 @@ class Registro : AppCompatActivity() {
         //setContentView(R.layout.activity_registro)
         binding = ActivityRegistroBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //boton Confirmar Registro
         binding.btnConfirmarRegistro.setOnClickListener(){
             if(binding.etxtNombre.text.toString()!="" && binding.etxtApellidos.text.toString()!=""){
                 var n = Apunte(binding.etxtNombre.text.toString(), binding.etxtApellidos.text.toString())
@@ -20,6 +22,8 @@ class Registro : AppCompatActivity() {
                 finish()
             }
         }
+
+        //Botón Cancelar
         binding.btnCancelar.setOnClickListener(){
             finish()
         }

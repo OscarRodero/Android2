@@ -2,7 +2,7 @@ package Modelo
 
 object Almacen {
     var Almacenaje = ArrayList<Apunte>()
-    fun addRegistro(re:Apunte){
+    fun addApunte(re:Apunte){
         this.Almacenaje.add(re)
     }
 }

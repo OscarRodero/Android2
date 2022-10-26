@@ -1,6 +1,7 @@
 package com.example.registrorecycle
 
 import Modelo.Almacen
+import Modelo.Apunte
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -16,8 +17,8 @@ class MainActivity : AppCompatActivity() {
             // There are no request codes
             val data: Intent? = result.data
             // Get data from Intent
-            val re: Registro = data!!.getSerializableExtra("objRegistro") as Registro
-            Almacen.addRegistro(re)
+            val apunte = data!!.getSerializableExtra("objRegistro") as Apunte
+            Almacen.addApunte(apunte)
 
         }
     }
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.btnRegistrar.setOnClickListener(){
             intent = Intent(this, Registro::class.java)
-            startActivity(intent)
+            resultLauncher(intent)
         }
     }
 }
