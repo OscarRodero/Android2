@@ -30,7 +30,6 @@ class MiAdaptadorRecycler(var contactos: ArrayList<Contacto>, var context: Conte
     }
 
     override fun getItemCount(): Int {
-
         return contactos.size
     }
 

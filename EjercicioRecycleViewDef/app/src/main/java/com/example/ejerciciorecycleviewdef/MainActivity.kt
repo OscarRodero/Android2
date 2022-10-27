@@ -12,8 +12,10 @@ import com.example.ejerciciorecycleviewdef.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     var contactos = Factoria.generarAgenda(10)
+
     lateinit var miRecyclerView: RecyclerView
     lateinit var binding:ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
