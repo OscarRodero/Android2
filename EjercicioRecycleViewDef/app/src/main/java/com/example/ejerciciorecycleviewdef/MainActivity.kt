@@ -1,7 +1,9 @@
 package com.example.ejerciciorecycleviewdef
 
 import Adaptadores.MiAdaptadorRecycler
+import Modelo.Contacto
 import Modelo.Factoria
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -16,6 +18,16 @@ class MainActivity : AppCompatActivity() {
     lateinit var miRecyclerView: RecyclerView
     lateinit var binding:ActivityMainBinding
 
+    var resultLauncher = registerForActivityResult(ActivityMainBinding.StartActivityForResult()) { result ->
+        if (result.resultCode == RESULT_OK) {
+            // There are no request codes
+            val data: Intent? = result.data
+            // Get data from Intent
+            val contacto = data!!.getSerializableExtra("contact") as Contacto
+            contactos.add(contacto)
+        }
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)
@@ -27,6 +39,11 @@ class MainActivity : AppCompatActivity() {
         miRecyclerView.layoutManager = LinearLayoutManager(this)
         var miAdaptador = MiAdaptadorRecycler(contactos, this)
         miRecyclerView.adapter = miAdaptador
+
+        binding.btnAAdirContacto.setOnClickListener{
+            var intent = Intent(this, VistaNuevoContacto::class.java)
+            resultLauncher(intent)
+        }
 
         binding.btnDetalles.setOnClickListener{
             if(MiAdaptadorRecycler.seleccionado>=0){
