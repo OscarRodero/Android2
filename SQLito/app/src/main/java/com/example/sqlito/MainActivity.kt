@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var miRecyclerView: RecyclerView
     lateinit var binding: ActivityMainBinding
     var Personas = Factoria.MisPersonas
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //setContentView(R.layout.activity_main)

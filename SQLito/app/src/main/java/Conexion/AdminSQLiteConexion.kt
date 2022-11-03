@@ -1,0 +1,4 @@
+package Conexion
+
+class AdminSQLiteConexion {
+}
