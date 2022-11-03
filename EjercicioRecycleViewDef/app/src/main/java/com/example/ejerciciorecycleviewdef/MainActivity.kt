@@ -14,7 +14,11 @@ import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ejerciciorecycleviewdef.databinding.ActivityMainBinding
+<<<<<<< Updated upstream
 import java.util.jar.Manifest
+=======
+import com.example.ejerciciorecycleviewdef.databinding.ActivityVistaNuevoContactoBinding
+>>>>>>> Stashed changes
 
 class MainActivity : AppCompatActivity() {
     var contactos = Factoria.generarAgenda(10)
@@ -22,7 +26,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var miRecyclerView: RecyclerView
     lateinit var binding:ActivityMainBinding
 
-    var resultLauncher = registerForActivityResult(ActivityMainBinding.StartActivityForResult()) { result ->
+    var resultLauncher = registerForActivityResult(ActivityVistaNuevoContactoBinding.StartActivityForResult()) { result ->
         if (result.resultCode == RESULT_OK) {
             // There are no request codes
             val data: Intent? = result.data
