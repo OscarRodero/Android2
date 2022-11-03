@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
                 Factoria.MisPersonas.add(p)
             }
         }
+        /*
         binding.btnBuscar.setOnClickListener(){
 
         }
@@ -40,6 +41,6 @@ class MainActivity : AppCompatActivity() {
         }
         binding.btnEditar.setOnClickListener(){
 
-        }
+        }*/
     }
 }

@@ -31,9 +31,9 @@ class MiAdaptadorRecycler(var Personas: ArrayList<Persona>, var context: Context
 
     class ViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
-        val Nombre = view.findViewById(R.id.etxtNombre) as TextView
-        val Edad = view.findViewById(R.id.etxtEdad) as TextView
-        val DNI = view.findViewById(R.id.etxtDNI) as TextView
+        val Nombre = view.findViewById(R.id.txtNombre) as TextView
+        val Edad = view.findViewById(R.id.txtEdad) as TextView
+        val DNI = view.findViewById(R.id.txtDNI) as TextView
 
         fun bind(perso: Persona, context: Context, posicion: Int, miAdaptadorRecycler: MiAdaptadorRecycler){
             Nombre.text = perso.Nombre
