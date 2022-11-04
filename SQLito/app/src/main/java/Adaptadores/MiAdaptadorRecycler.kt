@@ -57,7 +57,7 @@ class MiAdaptadorRecycler(var Personas: ArrayList<Persona>, var context: Context
                     MiAdaptadorRecycler.seleccionado = posicion
                 }
                 //Refresca el viewholder
-                miAdaptadorRecycler.notifyDataSetChanged()
+                //miAdaptadorRecycler.notifyDataSetChanged()
             })
         }
     }

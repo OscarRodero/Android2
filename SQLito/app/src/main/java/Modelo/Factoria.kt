@@ -1,7 +1,7 @@
 package Modelo
 
 object Factoria {
-    var MisPersonas:ArrayList<Persona> = Factoria.generarPersonas()
+    var MisPersonas:ArrayList<Persona> = ArrayList(10)
 
     private fun generarPersonas(): ArrayList<Persona> {
         var x = Persona("1", "A", "10")
