@@ -20,7 +20,6 @@ class MiAdaptadorRecycler(var Personas: ArrayList<Persona>, var context: Context
         val item = Personas.get(position)
         holder.bind(item, context, position, this)
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val layoutInflater = LayoutInflater.from(parent.context)
         return ViewHolder(layoutInflater.inflate(R.layout.item_card,parent,false))

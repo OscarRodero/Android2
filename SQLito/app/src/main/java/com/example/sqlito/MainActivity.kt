@@ -32,8 +32,13 @@ class MainActivity : AppCompatActivity() {
             if(!binding.etxtDNI.text.equals("") && !binding.etxtNombre.text.equals("") && !binding.etxtEdad.text.equals("")){
                 var p = Persona(binding.etxtDNI.text.toString(), binding.etxtNombre.text.toString(), binding.etxtEdad.text.toString())
                 Factoria.MisPersonas.add(p)
+<<<<<<< Updated upstream
                 Log.e("Oscar", Factoria.MisPersonas.toString())
                 miAdapter.notifyDataSetChanged()
+=======
+                var miAdapter = MiAdaptadorRecycler(Personas, this)
+                miRecyclerView.adapter = miAdapter
+>>>>>>> Stashed changes
             }
         }
 
