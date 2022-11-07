@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuAltaPilotos"
+        android:title="Alta de Pilotos" />
+    <item
+        android:id="@+id/menuAltaNaves"
+        android:title="Alta de Naves" />
+    <item
+        android:id="@+id/menuCrearMisiones"
+        android:title="Crear Misiones" />
+</menu>
