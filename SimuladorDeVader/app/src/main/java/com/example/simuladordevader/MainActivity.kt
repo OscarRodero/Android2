@@ -37,12 +37,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun abrirAltaNaves() {
-        TODO("Not yet implemented")
+        inte = Intent(this, AltaNaves::class.java)
+        startActivity(inte)
     }
 
     private fun abrirRankingPilotos() {
         inte = Intent(this, RankingPilotos::class.java)
-        Log.e("Oscar",inte.toString())
         startActivity(inte)
     }
 }
