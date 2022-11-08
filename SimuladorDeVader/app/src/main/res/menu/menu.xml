@@ -11,4 +11,7 @@
     <item
         android:id="@+id/menuCrearMisiones"
         android:title="Crear Misiones" />
+    <item
+        android:id="@+id/menuRankingPilotos"
+        android:title="Ranking de Pilotos" />
 </menu>

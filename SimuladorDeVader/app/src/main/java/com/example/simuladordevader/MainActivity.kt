@@ -1,5 +1,6 @@
 package com.example.simuladordevader
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
@@ -22,10 +23,20 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem):Boolean{
         when(item.itemId){ //Cada una es una de las opciones, cambiar al gusto.
-            R.id.menuAltaPilotos -> Toast.makeText(this, "Guardar",Toast.LENGTH_LONG).show()
-            R.id.menuAltaNaves -> Toast.makeText(this, "Perfil",Toast.LENGTH_LONG).show()
-            R.id.menuCrearMisiones -> Toast.makeText(this, "Salir",Toast.LENGTH_LONG).show()
+            R.id.menuAltaPilotos -> Toast.makeText(this, "Alta Pilotos",Toast.LENGTH_LONG).show()
+            R.id.menuAltaNaves -> abrirAltaNaves()
+            R.id.menuCrearMisiones -> Toast.makeText(this, "Crear Misiones",Toast.LENGTH_LONG).show()
+            R.id.menuRankingPilotos -> abrirRankingPilotos()
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun abrirAltaNaves() {
+        TODO("Not yet implemented")
+    }
+
+    private fun abrirRankingPilotos() {
+        var inte = Intent(this, RankingPilotos::class.java)
+        startActivity(inte)
     }
 }
