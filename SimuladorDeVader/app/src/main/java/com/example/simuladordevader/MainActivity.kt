@@ -3,6 +3,7 @@ package com.example.simuladordevader
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -10,10 +11,14 @@ import com.example.simuladordevader.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
+    lateinit var inte:Intent
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu?):Boolean{
@@ -36,7 +41,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun abrirRankingPilotos() {
-        var inte = Intent(this, RankingPilotos::class.java)
+        inte = Intent(this, RankingPilotos::class.java)
+        Log.e("Oscar",inte.toString())
         startActivity(inte)
     }
 }
