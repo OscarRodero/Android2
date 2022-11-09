@@ -40,17 +40,25 @@ class MainActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem):Boolean{
         when(item.itemId){ //Cada una es una de las opciones, cambiar al gusto.
-            R.id.menuAltaPilotos -> Toast.makeText(this, "Alta Pilotos",Toast.LENGTH_LONG).show()
+            R.id.menuAltaPilotos -> abrirAltaPilotos()
             R.id.menuAltaNaves -> abrirAltaNaves()
-            R.id.menuCrearMisiones -> Toast.makeText(this, "Crear Misiones",Toast.LENGTH_LONG).show()
+            R.id.menuCrearMisiones -> abrirCrearMisiones()
             R.id.menuRankingPilotos -> abrirRankingPilotos()
         }
         return super.onOptionsItemSelected(item)
     }
 
+    private fun abrirAltaPilotos() {
+        TODO("Not yet implemented")
+    }
+
     private fun abrirAltaNaves() {
         inte = Intent(this, AltaNaves::class.java)
         startActivity(inte)
+    }
+
+    private fun abrirCrearMisiones() {
+        TODO("Not yet implemented")
     }
 
     private fun abrirRankingPilotos() {
