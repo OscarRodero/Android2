@@ -27,8 +27,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.Inicio.setOnClickListener(){
-            inte = Intent(this, AltaNaves::class.java)
-            startActivity(inte)
+            inte = Intent(this, Login::class.java)
+            resultLauncher.launch(inte)
         }
 
     }
