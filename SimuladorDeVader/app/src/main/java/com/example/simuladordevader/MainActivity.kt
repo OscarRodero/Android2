@@ -7,8 +7,10 @@ import android.view.Menu
 import android.view.MenuItem
 import android.view.MotionEvent
 import android.view.View.OnTouchListener
+import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
+import com.example.simuladordevader.databinding.ActivityAjustesBinding
 import com.example.simuladordevader.databinding.ActivityMainBinding
 
 

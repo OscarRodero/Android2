@@ -17,23 +17,23 @@
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074" />
+        app:layout_constraintVertical_bias="0.077" />
 
     <RadioGroup
-        android:layout_width="213dp"
-        android:layout_height="45dp"
+        android:layout_width="223dp"
+        android:layout_height="63dp"
         android:checkedButton="@id/rbtnTemaClaro"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157">
+        app:layout_constraintVertical_bias="0.145">
 
         <RadioButton
             android:id="@+id/rbtnTemaClaro"
-            android:layout_width="77dp"
-            android:layout_height="wrap_content"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
             android:text="Claro" />
 
         <Space
@@ -44,8 +44,20 @@
         <RadioButton
             android:id="@+id/rbtnTemaOscuro"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:text="Oscuro" />
     </RadioGroup>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.588" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

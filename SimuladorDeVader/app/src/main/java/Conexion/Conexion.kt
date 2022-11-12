@@ -37,8 +37,9 @@ object Conexion {
         registro.put("license", n.license)
         registro.put("type", n.type)
         registro.put("canCarryCargo", n.canCarryCargo)
+        registro.put("canCarryPassengersvar", n.canCarryPassengers)
         registro.put("image", n.image)
-        db.insert("naves", null, registro)
+        db.insert("Naves", null, registro)
         db.close()
     }
     fun delNave(contexto: AppCompatActivity, license:String):Int{
