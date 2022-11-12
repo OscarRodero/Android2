@@ -2,14 +2,15 @@ package com.example.simuladordevader
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.Toast
+import android.view.MotionEvent
+import android.view.View.OnTouchListener
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.appcompat.app.AppCompatActivity
 import com.example.simuladordevader.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
@@ -26,11 +27,11 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        /*
         binding.Inicio.setOnClickListener(){
             inte = Intent(this, Login::class.java)
             resultLauncher.launch(inte)
-        }
-
+        }*/
     }
 
     override fun onCreateOptionsMenu(menu: Menu?):Boolean{
@@ -44,12 +45,19 @@ class MainActivity : AppCompatActivity() {
             R.id.menuAltaNaves -> abrirAltaNaves()
             R.id.menuCrearMisiones -> abrirCrearMisiones()
             R.id.menuRankingPilotos -> abrirRankingPilotos()
+            R.id.menuAjustes -> abrirAjustes()
         }
         return super.onOptionsItemSelected(item)
     }
 
+    private fun abrirAjustes() {
+        inte = Intent(this, Ajustes::class.java)
+        startActivity(inte)
+    }
+
     private fun abrirAltaPilotos() {
-        TODO("Not yet implemented")
+        inte = Intent(this, AltaPilotos::class.java)
+        startActivity(inte)
     }
 
     private fun abrirAltaNaves() {
@@ -58,7 +66,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun abrirCrearMisiones() {
-        TODO("Not yet implemented")
+        inte = Intent(this, CrearMisiones::class.java)
+        startActivity(inte)
     }
 
     private fun abrirRankingPilotos() {

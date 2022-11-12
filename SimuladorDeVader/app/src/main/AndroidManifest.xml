@@ -13,18 +13,21 @@
         android:theme="@style/Theme.SimuladorDeVader"
         tools:targetApi="31">
         <activity
-            android:name=".Login"
+            android:name=".Ajustes"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
         <activity
-            android:name=".ui.login.Login"
-            android:exported="false"
-            android:label="@string/title_activity_login" />
+            android:name=".CrearMisiones"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
         <activity
-            android:name=".AltaNaves"
+            android:name=".Login"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

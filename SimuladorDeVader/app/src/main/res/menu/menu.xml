@@ -14,4 +14,7 @@
     <item
         android:id="@+id/menuRankingPilotos"
         android:title="Ranking de Pilotos" />
+    <item
+        android:id="@+id/menuAjustes"
+        android:title="Ajustes" />
 </menu>
