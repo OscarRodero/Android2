@@ -78,4 +78,15 @@ object Conexion {
         db.close()
         return cant
     }
+
+    fun conectar(contexto:AppCompatActivity, nombre:String):Piloto? {
+        var n:Piloto?=null
+        val admin = AdminSQLiteConexion(contexto, nombreDB, null, 1)
+        val db = admin.writableDatabase
+        val linea = db.rawQuery("SELECT * FROM Pilotos WHERE name=${nombre}", null)
+        if(linea.moveToFirst()){
+            n = Piloto(nombre, linea.getInt(0), linea.getInt(1), linea.getString(2))
+        }
+        return n
+    }
 }

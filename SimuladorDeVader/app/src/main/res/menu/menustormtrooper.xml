@@ -3,6 +3,6 @@
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menuConsultarMisMisiones"
-        android:title="Mis misiones" />
+        android:id="@+id/menuAjustes"
+        android:title="Ajustes" />
 </menu>
