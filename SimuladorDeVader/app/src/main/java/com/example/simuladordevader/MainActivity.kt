@@ -5,12 +5,8 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.view.MotionEvent
-import android.view.View.OnTouchListener
-import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
-import com.example.simuladordevader.databinding.ActivityAjustesBinding
 import com.example.simuladordevader.databinding.ActivityMainBinding
 
 
@@ -37,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?):Boolean{
-        menuInflater.inflate(R.menu.menu, menu)
+        menuInflater.inflate(R.menu.menuvader, menu)
         return super.onCreateOptionsMenu(menu)
     }
 

@@ -3,6 +3,7 @@ package com.example.simuladordevader
 import Modelos.Nave
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.simuladordevader.databinding.ActivityAltaNavesBinding
 
 class AltaNaves : AppCompatActivity() {
@@ -12,8 +13,7 @@ class AltaNaves : AppCompatActivity() {
         //setContentView(R.layout.activity_alta_naves)
         binding = ActivityAltaNavesBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        binding.btnDarDeAltaNave.setOnClickListener(){
+        binding.btnDarAltaNaves.setOnClickListener(){
             if(!binding.etxtMatriculaNaveAlta.text.toString().equals("")){
                 var tipoNave:String
                 if(binding.rbtnBombarderos.isChecked){
@@ -23,8 +23,19 @@ class AltaNaves : AppCompatActivity() {
                 }else{
                     tipoNave="Transporte"
                 }
-                var n = Nave(binding.etxtMatriculaNaveAlta.text.toString(), tipoNave, binding.chkBoxCarga.isChecked, binding.chkBoxPasajeros.isChecked, null)
+                var x:Int
+                var y:Int
+                if(binding.chkBoxCarga.isChecked){
+                    x=1
+                }else{x=0}
+                if(binding.chkBoxPasajeros.isChecked){
+                    y=1
+                }else{y=0}
+                var n = Nave(binding.etxtMatriculaNaveAlta.text.toString(),tipoNave,x,y,null)
                 Conexion.Conexion.addNave(this, n)
+                Toast.makeText(this, "He entrado", Toast.LENGTH_LONG).show()
+            }else{
+                Toast.makeText(this, "No he entrado", Toast.LENGTH_LONG).show()
             }
         }
         binding.btnCancelarAltaNaves.setOnClickListener(){
@@ -32,7 +43,11 @@ class AltaNaves : AppCompatActivity() {
         }
 
         binding.btnSeleccionarImagen.setOnClickListener(){
-
+            if(Conexion.Conexion.buscarNave(this, binding.etxtMatriculaNaveAlta.text.toString())!=null){
+                Toast.makeText(this, "Encontrado", Toast.LENGTH_LONG).show()
+            }else{
+                Toast.makeText(this, "No Encontrado", Toast.LENGTH_LONG).show()
+            }
         }
         binding.rbtnCazas.setOnClickListener(){
             binding.chkBoxCarga.isChecked=false
