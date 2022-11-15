@@ -83,9 +83,9 @@ object Conexion {
         var n:Piloto?=null
         val admin = AdminSQLiteConexion(contexto, nombreDB, null, 1)
         val db = admin.writableDatabase
-        val linea = db.rawQuery("SELECT * FROM Pilotos WHERE name=${nombre}", null)
+        val linea = db.rawQuery("SELECT * FROM Pilotos WHERE name='${nombre}'", null)
         if(linea.moveToFirst()){
-            n = Piloto(nombre, linea.getInt(0), linea.getInt(1), linea.getString(2))
+            n = Piloto(linea.getString(0), linea.getInt(1), linea.getInt(2), linea.getString(3))
         }
         return n
     }

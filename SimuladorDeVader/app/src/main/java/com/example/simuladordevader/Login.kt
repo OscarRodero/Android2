@@ -1,5 +1,6 @@
 package com.example.simuladordevader
 
+import Modelos.Piloto
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -16,6 +17,7 @@ class Login : AppCompatActivity() {
         //setContentView(R.layout.activity_login)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         binding.btnAcceder.setOnClickListener(){
             if(!binding.etxtNombreLogin.text.toString().equals("") && !binding.etxtContraseA.text.toString().equals("")) {
                 var p = Conexion.Conexion.conectar(this, binding.etxtNombreLogin.text.toString())
@@ -33,8 +35,6 @@ class Login : AppCompatActivity() {
                 }
             }
         }
-        binding.btnSalir.setOnClickListener(){
-            finish()
-        }
+
     }
 }
