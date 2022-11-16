@@ -1,5 +1,6 @@
 package com.example.simuladordevader
 
+import Conexion.Conexion
 import Modelos.Nave
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -13,7 +14,9 @@ class AltaNaves : AppCompatActivity() {
         //setContentView(R.layout.activity_alta_naves)
         binding = ActivityAltaNavesBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        binding.imagenNave.setImageResource(R.drawable.tiebomber)
         binding.btnDarAltaNaves.setOnClickListener(){
+
             if(!binding.etxtMatriculaNaveAlta.text.toString().equals("")){
                 var tipoNave:String
                 if(binding.rbtnBombarderos.isChecked){
@@ -31,35 +34,35 @@ class AltaNaves : AppCompatActivity() {
                 if(binding.chkBoxPasajeros.isChecked){
                     y=1
                 }else{y=0}
+
                 var n = Nave(binding.etxtMatriculaNaveAlta.text.toString(),tipoNave,x,y,null)
-                Conexion.Conexion.addNave(this, n)
-                Toast.makeText(this, "He entrado", Toast.LENGTH_LONG).show()
+                if(Conexion.buscarNave(this, binding.etxtMatriculaNaveAlta.text.toString())==null){
+                    Toast.makeText(this, "Nave añadida", Toast.LENGTH_LONG).show()
+                    Conexion.addNave(this, n)
+                }
             }else{
-                Toast.makeText(this, "No he entrado", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Error al añadir la nave", Toast.LENGTH_LONG).show()
             }
         }
         binding.btnCancelarAltaNaves.setOnClickListener(){
             finish()
         }
 
-        binding.btnSeleccionarImagen.setOnClickListener(){
-            if(Conexion.Conexion.buscarNave(this, binding.etxtMatriculaNaveAlta.text.toString())!=null){
-                Toast.makeText(this, "Encontrado", Toast.LENGTH_LONG).show()
-            }else{
-                Toast.makeText(this, "No Encontrado", Toast.LENGTH_LONG).show()
-            }
-        }
+        //RadioButtons
         binding.rbtnCazas.setOnClickListener(){
+            binding.imagenNave.setImageResource(R.drawable.tiefighter)
             binding.chkBoxCarga.isChecked=false
             binding.chkBoxPasajeros.isChecked=false
             binding.chkBoxCarga.isEnabled=false
             binding.chkBoxPasajeros.isEnabled=false
         }
         binding.rbtnBombarderos.setOnClickListener(){
+            binding.imagenNave.setImageResource(R.drawable.tiebomber)
             binding.chkBoxCarga.isEnabled=true
             binding.chkBoxPasajeros.isEnabled=true
         }
         binding.rbtnTransporte.setOnClickListener(){
+            binding.imagenNave.setImageResource(R.drawable.shuttle)
             binding.chkBoxCarga.isEnabled=true
             binding.chkBoxPasajeros.isEnabled=true
         }
