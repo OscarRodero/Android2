@@ -37,7 +37,7 @@ class AltaPilotos : AppCompatActivity() {
             if(!binding.etxtNombre.text.toString().equals("") && !binding.etxtEdad.text.toString().equals("") && !binding.etxtContraseAPilotos.text.toString().equals("")){
                 var p = Piloto(binding.etxtNombre.text.toString(), binding.etxtEdad.text.toString().toInt(), binding.sbExp.progress.toInt(), binding.etxtContraseAPilotos.text.toString())
                 Conexion.Conexion.addPiloto(this, p)
-                Toast.makeText(this, "hey", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Piloto registrado con éxito", Toast.LENGTH_LONG).show()
             }
         }
         binding.btnCancelarAltaPilotos.setOnClickListener(){

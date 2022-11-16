@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
+import android.widget.Toast
 import com.example.simuladordevader.databinding.ActivityPrincipalPilotosBinding
 
 class PrincipalPilotos : AppCompatActivity() {
@@ -28,19 +29,19 @@ class PrincipalPilotos : AppCompatActivity() {
         binding.switchMisiones.setOnCheckedChangeListener{ buttonView, isChecked ->
             if(isChecked){
                 binding.switchMisiones.setText("Misiones Completadas")
-                cambiarRecycleView(0)
+                cambiarRecycleView(1)
             }else{
                 binding.switchMisiones.setText("Misiones Pendientes")
-                cambiarRecycleView(1)
+                cambiarRecycleView(0)
             }
         }
     }
 
     private fun cambiarRecycleView(i: Int) {
         if(i==0){
-
+            Toast.makeText(this,"Switch desactivado", Toast.LENGTH_SHORT).show()
         }else{
-
+            Toast.makeText(this,"Switch activado", Toast.LENGTH_SHORT).show()
         }
     }
 

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">SimuladorDeVader</string>
+    <string name="app_name">Simulador De Vader</string>
     <string name="title_activity_login">Login</string>
     <string name="prompt_email">Email</string>
     <string name="prompt_password">Password</string>

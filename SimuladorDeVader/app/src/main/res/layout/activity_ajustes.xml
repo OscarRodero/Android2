@@ -19,7 +19,21 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.077" />
 
+    <TextView
+        android:id="@+id/txtIdioma"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idioma"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294" />
+
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="223dp"
         android:layout_height="63dp"
         android:checkedButton="@id/rbtnTemaClaro"
@@ -48,16 +62,32 @@
             android:text="Oscuro" />
     </RadioGroup>
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
+    <RadioGroup
+        android:layout_width="141dp"
+        android:layout_height="159dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.588" />
+        app:layout_constraintVertical_bias="0.452">
+
+        <RadioButton
+            android:id="@+id/rbWookiee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wookiee" />
+
+        <RadioButton
+            android:id="@+id/rbImperial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Imperial" />
+
+        <RadioButton
+            android:id="@+id/rbRebelde"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rebelde" />
+    </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
