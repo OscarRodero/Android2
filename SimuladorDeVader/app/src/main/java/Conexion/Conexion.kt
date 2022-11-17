@@ -38,6 +38,10 @@ object Conexion {
         db.close()
         return cant
     }
+
+    /**
+     * Devuelve si el piloto se encuentra o no en la base de datos
+     */
     fun buscarPiloto(contexto:AppCompatActivity, name:String):Boolean{
         val admin = AdminSQLiteConexion(contexto, nombreDB, null, 1)
         val db = admin.writableDatabase
@@ -55,7 +59,7 @@ object Conexion {
         var n:Nave?=null
         val admin = AdminSQLiteConexion(contexto, nombreDB, null, 1)
         val db = admin.writableDatabase
-        val linea = db.rawQuery("SELECT * FROM Naves WHERE license=${nave}", null)
+        val linea = db.rawQuery("SELECT * FROM Naves WHERE license='${nave}'", null)
         if(linea.moveToFirst()){
             n = Nave(nave, linea.getString(0), linea.getInt(1), linea.getInt(2), linea.getString(3))
         }
@@ -72,7 +76,7 @@ object Conexion {
         registro.put("license", n.license)
         registro.put("type", n.type)
         registro.put("canCarryCargo", n.canCarryCargo)
-        registro.put("canCarryPassengersvar", n.canCarryPassengers)
+        registro.put("canCarryPassengers", n.canCarryPassengers)
         registro.put("image", n.image)
 
         db.insert("Naves", null, registro)

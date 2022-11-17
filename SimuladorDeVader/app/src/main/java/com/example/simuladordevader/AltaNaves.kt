@@ -15,8 +15,9 @@ class AltaNaves : AppCompatActivity() {
         binding = ActivityAltaNavesBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.imagenNave.setImageResource(R.drawable.tiebomber)
-        binding.btnDarAltaNaves.setOnClickListener(){
 
+
+        binding.btnDarAltaNaves.setOnClickListener(){
             if(!binding.etxtMatriculaNaveAlta.text.toString().equals("")){
                 var tipoNave:String
                 if(binding.rbtnBombarderos.isChecked){
