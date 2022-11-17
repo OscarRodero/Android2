@@ -1,5 +1,6 @@
 package com.example.simuladordevader
 
+import Modelos.Mision
 import android.app.Activity
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -9,13 +10,19 @@ import com.example.simuladordevader.databinding.ActivityCrearMisionesBinding
 
 class CrearMisiones : AppCompatActivity() {
     lateinit var binding:ActivityCrearMisionesBinding
-    lateinit var tipoMision:String
+    lateinit var tipoMision: String
+    lateinit var tiempoVuelo:Int
     var resultLauncher = registerForActivityResult(ActivityResultContracts.StartActivityForResult()){ result ->
         if(result.resultCode== Activity.RESULT_OK){
             val data: Intent? = result.data
-            val retornado = data!!.getStringExtra("tipoMision")
-            if (retornado != null) {
-                this.tipoMision=retornado
+            val retornado = data!!.getIntExtra("tipoMision")
+            if (retornado == 1) {
+                tipoMision="Vuelo"
+                tiempoVuelo=data!!.getIntExtra("tiempoVuelo")
+            }else if(retornado == 2){
+
+            }else if(retornado == 3){
+
             }
         }
     }
