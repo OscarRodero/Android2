@@ -15,6 +15,7 @@ object Conexion {
         this.nombreDB=nombreDB
     }
 
+
     fun addPiloto(contexto: AppCompatActivity, p: Piloto){
         val admin = AdminSQLiteConexion(contexto, nombreDB, null, 1)
         val db = admin.writableDatabase
