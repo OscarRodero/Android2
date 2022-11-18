@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Simulador De Vader</string>
+    <string name="app_name">Simulateur de Vader</string>
     <string name="textoTema">Thème</string>
     <string name="textoTemaClaro">Lumière</string>
     <string name="textoTemaOscuro">Sombre</string>

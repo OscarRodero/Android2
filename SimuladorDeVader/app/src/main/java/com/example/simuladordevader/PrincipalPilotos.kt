@@ -2,17 +2,24 @@ package com.example.simuladordevader
 
 import Adaptadores.AdaptadorMisiones
 import Conexion.Conexion
+import android.Manifest
 import android.content.Intent
+import android.content.pm.PackageManager
+import android.graphics.Bitmap
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.MediaStore
 import android.view.Menu
 import android.view.MenuItem
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.core.view.isVisible
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.simuladordevader.databinding.ActivityPrincipalPilotosBinding
 
 class PrincipalPilotos : AppCompatActivity() {
+    private val cameraRequest = 1888
     lateinit var binding: ActivityPrincipalPilotosBinding
     lateinit var miRV:RecyclerView
     lateinit var miRVT:RecyclerView
@@ -22,6 +29,13 @@ class PrincipalPilotos : AppCompatActivity() {
         //(setContentView(R.layout.activity_principal_pilotos)
         binding = ActivityPrincipalPilotosBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        if(ContextCompat.checkSelfPermission(applicationContext, Manifest.permission.CAMERA)==PackageManager.PERMISSION_DENIED)
+            ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), cameraRequest)
+
+        binding.btnEditarImagen.setOnClickListener(){
+            val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+            startActivityForResult(cameraIntent, cameraRequest)
+        }
 
         binding.txtNombreStoormTrooper.setText(intent.getStringExtra("nombre"))
         binding.txtTotalExperiencia.setText(intent.getStringExtra("experiencia"))
@@ -40,9 +54,9 @@ class PrincipalPilotos : AppCompatActivity() {
         miRVT.setHasFixedSize(true)
         miRVT.layoutManager = LinearLayoutManager(this)
         var miAdaptadorPilotos2= AdaptadorMisiones(Conexion.obtenerMisionesPendientes(this, R.id.etxtNombreLogin.toString()), this)
-        miRVT.adapter=miAdaptadorPilotos
-
+        miRVT.adapter=miAdaptadorPilotos2
         miRVT.isVisible=false
+
         binding.switchMisiones.setOnCheckedChangeListener{ buttonView, isChecked ->
             if(isChecked){
                 binding.switchMisiones.setText("Todas las Misiones")
@@ -52,8 +66,19 @@ class PrincipalPilotos : AppCompatActivity() {
                 cambiarRecycleView(0)
             }
         }
-    }
 
+        binding.btnEditarImagen.setOnClickListener(){
+            val cameraIntent = Intent(MediaStore.ACTION_IMAGE_CAPTURE)
+            startActivityForResult(cameraIntent, cameraRequest)
+        }
+    }
+    override fun onActivityResult(requestCode:Int, resultCode:Int, data: Intent?){
+        super.onActivityResult(requestCode, resultCode, data)
+        if(requestCode == cameraRequest){
+            val photo: Bitmap = data?.extras?.get("data") as Bitmap
+            binding.imagenPerfil.setImageBitmap(photo)
+        }
+    }
     private fun seleccionarImagen(): Int {
         return 0
     }
@@ -81,10 +106,6 @@ class PrincipalPilotos : AppCompatActivity() {
         return super.onOptionsItemSelected(item)
     }
 
-    private fun abrirConsultarMisiones() {
-        inte = Intent(this, ConsultarMisiones::class.java)
-        startActivity(inte)
-    }
     private fun abrirAjustes() {
         inte = Intent(this, Ajustes::class.java)
         startActivity(inte)

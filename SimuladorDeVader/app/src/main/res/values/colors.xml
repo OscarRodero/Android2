@@ -7,4 +7,8 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="MiRojo">#FF0000</color>
+    <color name="MiNegro">#000000</color>
+    <color name="MiAzul">#150268</color>
+    <color name="MisDetalles">#AD0940</color>
 </resources>

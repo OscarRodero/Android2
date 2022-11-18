@@ -38,7 +38,7 @@ class AdaptadorPilotosAltaMisiones(var pilotos: ArrayList<Piloto>, var context: 
             experienciaPiloto.text= MiPiloto.exp.toString()
             if (posicion == AdaptadorPilotosAltaMisiones.seleccionado) {
                 with(nombrePiloto) {
-                    this.setTextColor(resources.getColor(R.color.teal_200))
+                    this.setTextColor(resources.getColor(R.color.MiAzul))
                 }
             }
             else {
