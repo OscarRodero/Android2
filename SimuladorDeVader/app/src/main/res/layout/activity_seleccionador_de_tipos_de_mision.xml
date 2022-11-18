@@ -23,19 +23,19 @@
             android:id="@+id/rbVuelo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Vuelo" />
+            android:text="@string/rbVuelo" />
 
         <RadioButton
             android:id="@+id/rbBombardeo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Bombardeo" />
+            android:text="@string/rbBombardeo" />
 
         <RadioButton
             android:id="@+id/rbCombate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Combate" />
+            android:text="@string/rbCombate" />
     </RadioGroup>
 
     <EditText
@@ -43,7 +43,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Tiempo de vuelo"
+        android:hint="@string/pistaTiempoVuelo"
         android:inputType="number"
         android:minHeight="48dp"
         android:textAlignment="center"
@@ -60,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Cantidad de Objetivos"
+        android:hint="@string/pistaCantObjetivos"
         android:inputType="number"
         android:minHeight="48dp"
         android:textAlignment="center"
@@ -76,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Cantidad de cazas enemigos"
+        android:hint="@string/pistaCantEnemigos"
         android:inputType="number"
         android:minHeight="48dp"
         android:textAlignment="center"
@@ -91,7 +91,7 @@
         android:id="@+id/chkBoxLlevaPasajeros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
+        android:text="@string/chkLlevaPasajeros"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -103,7 +103,7 @@
         android:id="@+id/chkBoxLlevaCarga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CheckBox"
+        android:text="@string/chkLlevaCargamento"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -115,7 +115,7 @@
         android:id="@+id/btnAceptarYContinuar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Aceptar y Continuar"
+        android:text="@string/BotonAceptarYContinuar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"

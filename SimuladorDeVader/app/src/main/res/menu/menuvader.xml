@@ -4,17 +4,17 @@
 
     <item
         android:id="@+id/menuAltaPilotos"
-        android:title="Alta de Pilotos" />
+        android:title="@string/TituloAltaPilotos" />
     <item
         android:id="@+id/menuAltaNaves"
-        android:title="Alta de Naves" />
+        android:title="@string/TituloAltaNaves" />
     <item
         android:id="@+id/menuCrearMisiones"
-        android:title="Crear Misiones" />
+        android:title="@string/CrearMisiones" />
     <item
         android:id="@+id/menuRankingPilotos"
-        android:title="Ranking de Pilotos" />
+        android:title="@string/RankingPilotos" />
     <item
         android:id="@+id/menuAjustes"
-        android:title="Ajustes" />
+        android:title="@string/Ajustes" />
 </menu>

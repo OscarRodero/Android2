@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".PrincipalPilotos">
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvMisiones"
+        android:layout_width="412dp"
+        android:layout_height="298dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.745" />
+
     <TextView
         android:id="@+id/txtNombreStoormTrooper"
         android:layout_width="wrap_content"
@@ -59,6 +70,7 @@
         app:layout_constraintVertical_bias="0.194" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTodasLasMisiones"
         android:layout_width="412dp"
         android:layout_height="298dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -66,7 +78,7 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669" />
+        app:layout_constraintVertical_bias="0.745" />
 
     <ImageView
         android:id="@+id/imagenPerfil"
@@ -84,7 +96,7 @@
         android:id="@+id/btnEditarImagen"
         android:layout_width="163dp"
         android:layout_height="48dp"
-        android:text="Editar Imagen"
+        android:text="@string/BotonEditarImagen"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.072"

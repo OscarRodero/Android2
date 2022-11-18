@@ -10,7 +10,7 @@
         android:id="@+id/btnDarAltaNaves"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Dar de Alta"
+        android:text="@string/DarDeAlta"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.188"
@@ -23,7 +23,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Matrícula"
+        android:hint="@string/PistaMatricula"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,7 +37,7 @@
         android:id="@+id/txtTituloAltaNaves"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Alta de naves"
+        android:text="@string/TituloAltaNaves"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -62,26 +62,26 @@
             android:id="@+id/rbtnBombarderos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Bombardero" />
+            android:text="@string/Bombardero" />
 
         <RadioButton
             android:id="@+id/rbtnCazas"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Caza" />
+            android:text="@string/Caza" />
 
         <RadioButton
             android:id="@+id/rbtnTransporte"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Transporte" />
+            android:text="@string/Transporte" />
     </RadioGroup>
 
     <TextView
         android:id="@+id/txtTipoNave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tipo de nave"
+        android:text="@string/TextoTipoDeNave"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -93,7 +93,7 @@
         android:id="@+id/chkBoxCarga"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Puede llevar cargamento"
+        android:text="@string/PuedeLlevarCargamento"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -104,7 +104,7 @@
         android:id="@+id/chkBoxPasajeros"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Puede llevar pasajeros"
+        android:text="@string/PuedeLlevarPasajeros"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.472"
@@ -116,7 +116,7 @@
         android:id="@+id/btnCancelarAltaNaves"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cancelar"
+        android:text="Salir"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.764"

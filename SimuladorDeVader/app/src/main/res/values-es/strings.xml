@@ -1,10 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Simulador De Vader</string>
-    <!--Pantalla de ajustes-->
     <string name="textoTema">Tema</string>
     <string name="textoTemaClaro">Claro</string>
     <string name="textoTemaOscuro">Oscuro</string>
-    <!--Pantalla de alta de naves-->
     <string name="TituloAltaNaves">Alta de Naves</string>
     <string name="PistaMatricula">Matrícula</string>
     <string name="TextoTipoDeNave">Tipo de nave</string>
@@ -15,14 +14,11 @@
     <string name="PuedeLlevarPasajeros">Puede llevar pasajeros</string>
     <string name="DarDeAlta">Dar de alta</string>
     <string name="Salir">Salir</string>
-    <!--Pantalla de alta de pilotos-->
     <string name="TituloAltaPilotos">Alta de pilotos</string>
     <string name="PistaNombre">Nombre</string>
     <string name="PistaEdad">Edad</string>
     <string name="PistaContraseña">Contraseña</string>
-    <!--Pantalla de alta de consultar misiones-->
     <string name="BotonVolver">Volver</string>
-    <!--Pantalla de alta de crear misiones-->
     <string name="Pilotos">Pilotos</string>
     <string name="Naves">Naves</string>
     <string name="TiposDeMision">Tipos de Misión</string>
@@ -30,12 +26,9 @@
     <string name="BotonCrearMision">Crear Misión</string>
     <string name="BotonCancelar">Cancelar</string>
     <string name="PistaIdMision">Id de la misión</string>
-    <!--Pantalla de login-->
     <string name="PistaUsuario">Usuario</string>
     <string name="BotonAcceder">Acceder</string>
-    <!--Pantalla principal del Piloto-->
     <string name="BotonEditarImagen">Editar Imagen</string>
-    <!--Pantalla seleccionador de tipos de misión-->
     <string name="rbVuelo">Vuelo</string>
     <string name="rbBombardeo">Bombardeo</string>
     <string name="rbCombate">Combate</string>
@@ -45,7 +38,6 @@
     <string name="chkLlevaPasajeros">Lleva pasajeros</string>
     <string name="chkLlevaCargamento">Lleva cargamento</string>
     <string name="BotonAceptarYContinuar">Aceptar y continuar</string>
-    <!--Menús-->
     <string name="CrearMisiones">Crear misiones</string>
     <string name="RankingPilotos">Ranking de pilotos</string>
     <string name="Ajustes">Ajustes</string>

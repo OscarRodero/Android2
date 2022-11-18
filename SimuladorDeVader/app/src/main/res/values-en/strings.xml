@@ -1,4 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Vader simulator</string>
+    <string name="textoTema">Theme</string>
+    <string name="textoTemaClaro">Light</string>
+    <string name="textoTemaOscuro">Dark</string>
+    <string name="TituloAltaNaves">Discharge ships</string>
+    <string name="PistaMatricula">License</string>
+    <string name="TextoTipoDeNave">Ship type</string>
+    <string name="Bombardero">Bomber</string>
+    <string name="Caza">Fighter</string>
+    <string name="Transporte">Transport</string>
+    <string name="PuedeLlevarCargamento">Can carry cargo</string>
+    <string name="PuedeLlevarPasajeros">Can carry passangers</string>
+    <string name="DarDeAlta">Register</string>
+    <string name="Salir">Exit</string>
+    <string name="TituloAltaPilotos">Pilo\'s discharge</string>
+    <string name="PistaNombre">Name</string>
+    <string name="PistaEdad">Age</string>
+    <string name="PistaContraseña">Password</string>
+    <string name="BotonVolver">Back</string>
+    <string name="Pilotos">Pilot\'s</string>
+    <string name="Naves">Ships</string>
+    <string name="TiposDeMision">Mission types</string>
+    <string name="BotonSeleccionarMision">Select mission</string>
+    <string name="BotonCrearMision">Create mission</string>
+    <string name="BotonCancelar">Cancel</string>
+    <string name="PistaIdMision">Mission ID</string>
+    <string name="PistaUsuario">User</string>
+    <string name="BotonAcceder">Access</string>
+    <string name="BotonEditarImagen">Edit image</string>
+    <string name="rbVuelo">Flight</string>
+    <string name="rbBombardeo">Bombing</string>
+    <string name="rbCombate">Combat</string>
+    <string name="pistaTiempoVuelo">Flight time</string>
+    <string name="pistaCantObjetivos">Number of objectives</string>
+    <string name="pistaCantEnemigos">Number of targets</string>
+    <string name="chkLlevaPasajeros">Carry passengers</string>
+    <string name="chkLlevaCargamento">Carry cargo</string>
+    <string name="BotonAceptarYContinuar">Acept and continue</string>
+    <string name="CrearMisiones">Create missions</string>
+    <string name="RankingPilotos">Pilot Ranking</string>
+    <string name="Ajustes">Settings</string>
 </resources>

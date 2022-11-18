@@ -33,6 +33,8 @@ class Login : AppCompatActivity() {
                             startActivity(inte)
                         }else{
                             inte = Intent(this, PrincipalPilotos::class.java)
+                            inte.putExtra("nombre", binding.etxtNombreLogin.text.toString())
+                            inte.putExtra("experiencia", p.exp.toString())
                             startActivity(inte)
                         }
                     }

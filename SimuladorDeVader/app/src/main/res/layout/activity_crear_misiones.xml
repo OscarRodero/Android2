@@ -32,7 +32,7 @@
         android:id="@+id/txtTituloMisionesPiloto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Piloto"
+        android:text="@string/Pilotos"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,7 +45,7 @@
         android:id="@+id/txtTituloMisionesNave"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nave"
+        android:text="@string/Naves"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,23 +58,23 @@
         android:id="@+id/txtTituloMisionesTipoMision"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tipo de misión"
+        android:text="@string/TiposDeMision"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65" />
+        app:layout_constraintVertical_bias="0.643" />
 
     <Button
         android:id="@+id/btnCrearMision"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CrearMision"
+        android:text="@string/BotonCrearMision"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.252"
+        app:layout_constraintHorizontal_bias="0.146"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.922" />
@@ -83,10 +83,10 @@
         android:id="@+id/btnCancelarCrearMision"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Cancelar"
+        android:text="@string/BotonCancelar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.744"
+        app:layout_constraintHorizontal_bias="0.794"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.922" />
@@ -95,20 +95,20 @@
         android:id="@+id/btnTipoMision"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Seleccionar Misión"
+        android:text="@string/BotonSeleccionarMision"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.729" />
+        app:layout_constraintVertical_bias="0.723" />
 
     <EditText
         android:id="@+id/etxtIDMision"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="Id de la misión"
+        android:hint="@string/PistaIdMision"
         android:inputType="number"
         android:minHeight="48dp"
         android:textAlignment="center"
@@ -117,5 +117,5 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.822" />
+        app:layout_constraintVertical_bias="0.821" />
 </androidx.constraintlayout.widget.ConstraintLayout>

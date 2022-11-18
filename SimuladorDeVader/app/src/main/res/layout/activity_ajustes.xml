@@ -10,27 +10,14 @@
         android:id="@+id/txtTema"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tema"
+        android:text="@string/textoTema"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
-
-    <TextView
-        android:id="@+id/txtIdioma"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Idioma"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.294" />
+        app:layout_constraintVertical_bias="0.33" />
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -42,13 +29,13 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.145">
+        app:layout_constraintVertical_bias="0.41">
 
         <RadioButton
             android:id="@+id/rbtnTemaClaro"
             android:layout_width="90dp"
             android:layout_height="match_parent"
-            android:text="Claro" />
+            android:text="@string/textoTemaClaro" />
 
         <Space
             android:layout_width="wrap_content"
@@ -59,35 +46,7 @@
             android:id="@+id/rbtnTemaOscuro"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:text="Oscuro" />
-    </RadioGroup>
-
-    <RadioGroup
-        android:layout_width="141dp"
-        android:layout_height="159dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.452">
-
-        <RadioButton
-            android:id="@+id/rbWookiee"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Wookiee" />
-
-        <RadioButton
-            android:id="@+id/rbImperial"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Imperial" />
-
-        <RadioButton
-            android:id="@+id/rbRebelde"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Rebelde" />
+            android:text="@string/textoTemaOscuro" />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

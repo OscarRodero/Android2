@@ -1,4 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Oi Vader</string>
+    <string name="app_name">Simulador De Vader</string>
+    <string name="textoTema">Thème</string>
+    <string name="textoTemaClaro">Lumière</string>
+    <string name="textoTemaOscuro">Sombre</string>
+    <string name="TituloAltaNaves">Navires de décharge</string>
+    <string name="PistaMatricula">License</string>
+    <string name="TextoTipoDeNave">Type de navire</string>
+    <string name="Bombardero">Bombardier</string>
+    <string name="Caza">Chasse</string>
+    <string name="Transporte">Transport</string>
+    <string name="PuedeLlevarCargamento">Peut transporter des marchandises</string>
+    <string name="PuedeLlevarPasajeros">Peut transporter des passagers</string>
+    <string name="DarDeAlta">Enregistrer</string>
+    <string name="Salir">sortir</string>
+    <string name="TituloAltaPilotos">Inscription des pilotes</string>
+    <string name="PistaNombre">nom</string>
+    <string name="PistaEdad">Âge</string>
+    <string name="PistaContraseña">Mot de passe</string>
+    <string name="BotonVolver">Revenir</string>
+    <string name="Pilotos">Pilotes</string>
+    <string name="Naves">navires</string>
+    <string name="TiposDeMision">Types de missions</string>
+    <string name="BotonSeleccionarMision">Sélectionner la mission</string>
+    <string name="BotonCrearMision">Créer une mission</string>
+    <string name="BotonCancelar">Annuler</string>
+    <string name="PistaIdMision">Identifiant de mission</string>
+    <string name="PistaUsuario">Utilisateur</string>
+    <string name="BotonAcceder">Accéder</string>
+    <string name="BotonEditarImagen">Éditer l\'image</string>
+    <string name="rbVuelo">Voyage</string>
+    <string name="rbBombardeo">Bombardement</string>
+    <string name="rbCombate">Combat</string>
+    <string name="pistaTiempoVuelo">Temps de vol</string>
+    <string name="pistaCantObjetivos">Nombre d\'objectifs</string>
+    <string name="pistaCantEnemigos">Nombre d\'ennemis</string>
+    <string name="chkLlevaPasajeros">Transporter des passagers</string>
+    <string name="chkLlevaCargamento">Transporter des marchandises</string>
+    <string name="BotonAceptarYContinuar">Accepter et continuer</string>
+    <string name="CrearMisiones">Créer des missions</string>
+    <string name="RankingPilotos">Classement des pilotes</string>
+    <string name="Ajustes">Réglages</string>
 </resources>
