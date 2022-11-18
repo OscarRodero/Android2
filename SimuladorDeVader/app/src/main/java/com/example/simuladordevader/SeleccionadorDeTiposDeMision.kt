@@ -73,16 +73,38 @@ class SeleccionadorDeTiposDeMision : AppCompatActivity() {
     }
 
     private fun devolverCombate(missionType: Int) {
-        TODO("Not yet implemented")
+        val tipomision = missionType
+        val cantCazas = binding.etxtCantCazas.text.toString()
+        val intent = Intent()
+        intent.putExtra("tipoMision", tipomision)
+        intent.putExtra("cantCazas", cantCazas)
+        setResult(Activity.RESULT_OK)
+        finish()
     }
 
     private fun devolverBombardeo(missionType: Int) {
-        TODO("Not yet implemented")
+        val intent = Intent()
+        val tipomision = missionType
+        val cantObjetivos = binding.etxtCantObjetivos.text.toString()
+        var llevaCargamento = 0
+        var llevaPasajeros = 0
+        if(binding.chkBoxLlevaCarga.isChecked){
+              llevaCargamento=1
+        }
+        if(binding.chkBoxLlevaPasajeros.isChecked){
+            llevaPasajeros=1
+        }
+        intent.putExtra("tipoMision", tipomision)
+        intent.putExtra("cantObjetivos", cantObjetivos)
+        intent.putExtra("llevaCargamento", llevaCargamento)
+        intent.putExtra("llevaPasajeros", llevaPasajeros)
+        setResult(Activity.RESULT_OK)
+        finish()
     }
 
     private fun devolverVuelo(missionType: Int) {
         val tipomision = missionType
-        val tiempoVuelo = binding.etxtTiempoVuelo.text.toString().toInt()
+        val tiempoVuelo = binding.etxtTiempoVuelo.text.toString()
         val intent = Intent()
         intent.putExtra("tipoMision", tipomision)
         intent.putExtra("tiempoVuelo", tiempoVuelo)

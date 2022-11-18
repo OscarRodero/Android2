@@ -21,8 +21,8 @@ class PrincipalPilotos : AppCompatActivity() {
         binding.txtNombreStoormTrooper.setText(intent.getStringExtra("nombre"))
         var p: Piloto? = Conexion.conectar(this, binding.txtNombreStoormTrooper.text.toString())
 
-        binding.imagenStormTrooper.setOnClickListener(){
-           // binding.imagenStormTrooper.setBackgroundResource()
+        binding.btnEditarImagen.setOnClickListener(){
+            binding.imagenPerfil.setImageResource(seleccionarImagen())
         }
 
 
@@ -35,6 +35,10 @@ class PrincipalPilotos : AppCompatActivity() {
                 cambiarRecycleView(0)
             }
         }
+    }
+
+    private fun seleccionarImagen(): Int {
+        return 0
     }
 
     private fun cambiarRecycleView(i: Int) {

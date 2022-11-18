@@ -2,6 +2,7 @@ package com.example.simuladordevader
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.simuladordevader.databinding.ActivityAjustesBinding
 import com.example.simuladordevader.databinding.ActivityAltaNavesBinding
 
@@ -12,5 +13,7 @@ class Ajustes : AppCompatActivity() {
         //setContentView(R.layout.activity_ajustes)
         binding = ActivityAjustesBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+
     }
 }
