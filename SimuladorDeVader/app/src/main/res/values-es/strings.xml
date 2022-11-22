@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Simulador De Vader</string>
+    <string name="textoTema">Tema</string>
+    <string name="textoTemaClaro">Claro</string>
+    <string name="textoTemaOscuro">Oscuro</string>
+    <string name="TituloAltaNaves">Alta de Naves</string>
+    <string name="PistaMatricula">Matrícula</string>
+    <string name="TextoTipoDeNave">Tipo de nave</string>
+    <string name="Bombardero">Bombardero</string>
+    <string name="Caza">Caza</string>
+    <string name="Transporte">Transporte</string>
+    <string name="PuedeLlevarCargamento">Puede llevar cargamento</string>
+    <string name="PuedeLlevarPasajeros">Puede llevar pasajeros</string>
+    <string name="DarDeAlta">Dar de alta</string>
+    <string name="Salir">Salir</string>
+    <string name="TituloAltaPilotos">Alta de pilotos</string>
+    <string name="PistaNombre">Nombre</string>
+    <string name="PistaEdad">Edad</string>
+    <string name="PistaContraseña">Contraseña</string>
+    <string name="BotonVolver">Volver</string>
+    <string name="Pilotos">Pilotos</string>
+    <string name="Naves">Naves</string>
+    <string name="TiposDeMision">Tipos de Misión</string>
+    <string name="BotonSeleccionarMision">Seleccionar Misión</string>
+    <string name="BotonCrearMision">Crear Misión</string>
+    <string name="BotonCancelar">Cancelar</string>
+    <string name="PistaIdMision">Id de la misión</string>
+    <string name="PistaUsuario">Usuario</string>
+    <string name="BotonAcceder">Acceder</string>
+    <string name="BotonEditarImagen">Editar Imagen</string>
+    <string name="rbVuelo">Vuelo</string>
+    <string name="rbBombardeo">Bombardeo</string>
+    <string name="rbCombate">Combate</string>
+    <string name="pistaTiempoVuelo">Tiempo de vuelo</string>
+    <string name="pistaCantObjetivos">Cantidad de Objetivos</string>
+    <string name="pistaCantEnemigos">Cantidad de enemigos</string>
+    <string name="chkLlevaPasajeros">Lleva pasajeros</string>
+    <string name="chkLlevaCargamento">Lleva cargamento</string>
+    <string name="BotonAceptarYContinuar">Aceptar y continuar</string>
+    <string name="CrearMisiones">Crear misiones</string>
+    <string name="RankingPilotos">Ranking de pilotos</string>
+    <string name="Ajustes">Ajustes</string>
+</resources>
